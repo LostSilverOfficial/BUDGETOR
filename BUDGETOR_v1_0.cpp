@@ -4,17 +4,17 @@
 #include <stdlib.h>
 #include <math.h>
 int budget_total;
-float food, wife, husb, kids, trans, hkeep, divide, entert, save, budget_used; /* значения переменных
-																			   узнаете, когда ваш бюджет
-																			   будет рассчитан... */
+float food, wife, husb, kids, trans, hkeep, divide, entert, save, budget_used; /* Р·РЅР°С‡РµРЅРёСЏ РїРµСЂРµРјРµРЅРЅС‹С…
+																			   СѓР·РЅР°РµС‚Рµ, РєРѕРіРґР° РІР°С€ Р±СЋРґР¶РµС‚
+																			   Р±СѓРґРµС‚ СЂР°СЃСЃС‡РёС‚Р°РЅ... */
 main ()
 {
-	setlocale (LC_ALL, "Rus");
+	setlocale (LC_ALL, "Rus"); //РїРµСЂРµРІС‘Р» LostSilver
 	system ("Color 0A");
-	printf ("БЮДЖЕТОР v1.0\n");
-	printf ("(c) Lost Silver, 2017 г.\n");
+	printf ("Р‘Р®Р”Р–Р•РўРћР  v1.0\n");
+	printf ("(c) Lost Silver, 2017 Рі.\n");
 	printf ("\n");
-	printf ("Введите сумму семейного бюджета: \n");
+	printf ("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ СЃРµРјРµР№РЅРѕРіРѕ Р±СЋРґР¶РµС‚Р°: \n");
 	scanf ("%d", &budget_total);
 	printf ("--------------------------------\n");
 	food=(budget_total/100)*22.75;
@@ -25,23 +25,23 @@ main ()
 	trans=(budget_total/100)*2.42;
 	husb=(budget_total/100)*1.46;
 	save=(budget_total/100)*5;
-	budget_used=food+hkeep+wife+kids+entert+trans+husb+save; //а сюда мы вписываем распределённый бюджет
-	divide=budget_total-budget_used; //распил бюджета
-	printf ("\aРАСПРЕДЕЛЕНИЕ БЮДЖЕТА\n");
-	printf ("Всего: %d\n", budget_total);
-	printf ("Питание: %.2f (22.75%%)\n", food);
-	printf ("Коммуналка: %.2f (12.5%%)\n", hkeep);
-	printf ("На жену: %.2f (12.7%%)\n", wife);
-	printf ("На детей: %.2f (20%%)\n", kids);
-	printf ("Развлечения: %.2f (11.26%%)\n", entert);
-	printf ("Транспорт: %.2f (2.42%%)\n", trans);
-	printf ("На мужа: %.2f (1.46%%)\n", husb);
-	printf ("Накопления: %.2f (5%%)\n", save);
-	printf ("Распилить: %.2f (11.91%%)\n", divide);
+	budget_used=food+hkeep+wife+kids+entert+trans+husb+save; //Р° СЃСЋРґР° РјС‹ РІРїРёСЃС‹РІР°РµРј СЂР°СЃРїСЂРµРґРµР»С‘РЅРЅС‹Р№ Р±СЋРґР¶РµС‚
+	divide=budget_total-budget_used; //СЂР°СЃРїРёР» Р±СЋРґР¶РµС‚Р°
+	printf ("\aР РђРЎРџР Р•Р”Р•Р›Р•РќРР• Р‘Р®Р”Р–Р•РўРђ\n");
+	printf ("Р’СЃРµРіРѕ: %d\n", budget_total);
+	printf ("РџРёС‚Р°РЅРёРµ: %.2f (22.75%%)\n", food);
+	printf ("РљРѕРјРјСѓРЅР°Р»РєР°: %.2f (12.5%%)\n", hkeep);
+	printf ("РќР° Р¶РµРЅСѓ: %.2f (12.7%%)\n", wife);
+	printf ("РќР° РґРµС‚РµР№: %.2f (20%%)\n", kids);
+	printf ("Р Р°Р·РІР»РµС‡РµРЅРёСЏ: %.2f (11.26%%)\n", entert);
+	printf ("РўСЂР°РЅСЃРїРѕСЂС‚: %.2f (2.42%%)\n", trans);
+	printf ("РќР° РјСѓР¶Р°: %.2f (1.46%%)\n", husb);
+	printf ("РќР°РєРѕРїР»РµРЅРёСЏ: %.2f (5%%)\n", save);
+	printf ("Р Р°СЃРїРёР»РёС‚СЊ: %.2f (11.91%%)\n", divide);
 	printf ("--------------------------------\n");
-	printf ("Результат окончательный, обжалованию не подлежит!\n");
-	printf ("НЕ ЗАБУДЬТЕ ПЕРЕПИСАТЬ РЕЗУЛЬТАТЫ РАСПРЕДЕЛЕНИЯ НА ОТДЕЛЬНЫЙ ЛИСТ/БЛАНК!\n");
-	printf ("Для закрытия программы нажмите Enter\n");
+	printf ("Р РµР·СѓР»СЊС‚Р°С‚ РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅС‹Р№, РѕР±Р¶Р°Р»РѕРІР°РЅРёСЋ РЅРµ РїРѕРґР»РµР¶РёС‚!\n");
+	printf ("РќР• Р—РђР‘РЈР”Р¬РўР• РџР•Р Р•РџРРЎРђРўР¬ Р Р•Р—РЈР›Р¬РўРђРўР« Р РђРЎРџР Р•Р”Р•Р›Р•РќРРЇ РќРђ РћРўР”Р•Р›Р¬РќР«Р™ Р›РРЎРў/Р‘Р›РђРќРљ!\n");
+	printf ("Р”Р»СЏ Р·Р°РєСЂС‹С‚РёСЏ РїСЂРѕРіСЂР°РјРјС‹ РЅР°Р¶РјРёС‚Рµ Enter\n");
 	getchar ();
 	getchar ();
 }
