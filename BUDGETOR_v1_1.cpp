@@ -28,16 +28,16 @@ main ()
 	budget_used=food+hkeep+wife+kids+entert+trans+husb+save; //а сюда мы вписываем распределённый бюджет
 	divide=budget_total-budget_used; //распил бюджета
 	printf ("\aРАСПРЕДЕЛЕНИЕ БЮДЖЕТА\n");
-	printf ("Всего: %d\n", budget_total);
-	printf ("Питание: %.2f (22.75%%)\n", food);
-	printf ("Коммуналка: %.2f (12.5%%)\n", hkeep);
-	printf ("На жену: %.2f (12.7%%)\n", wife);
-	printf ("На детей: %.2f (20%%)\n", kids);
-	printf ("Развлечения: %.2f (11.26%%)\n", entert);
-	printf ("Транспорт: %.2f (2.42%%)\n", trans);
-	printf ("На мужа: %.2f (1.46%%)\n", husb);
-	printf ("Накопления: %.2f (5%%)\n", save);
-	printf ("Распилить: %.2f (11.91%%)\n", divide);
+	printf ("Всего: %d руб.\n", budget_total);
+	printf ("Питание: %.2f руб. (22.75%%)\n", food);
+	printf ("Коммуналка: %.2f руб. (12.5%%)\n", hkeep);
+	printf ("На жену: %.2f руб. (12.7%%)\n", wife);
+	printf ("На детей: %.2f руб. (20%%)\n", kids);
+	printf ("Развлечения: %.2f руб. (11.26%%)\n", entert);
+	printf ("Транспорт: %.2f руб. (2.42%%)\n", trans);
+	printf ("На мужа: %.2f руб. (1.46%%)\n", husb);
+	printf ("Накопления: %.2f руб. (5%%)\n", save);
+	printf ("Распилить: %.2f руб. (11.91%%)\n", divide);
 	printf ("--------------------------------\n");
 	printf ("Результат окончательный, обжалованию не подлежит!\n");
 	printf ("НЕ ЗАБУДЬТЕ ПЕРЕПИСАТЬ РЕЗУЛЬТАТЫ РАСПРЕДЕЛЕНИЯ НА ОТДЕЛЬНЫЙ ЛИСТ/БЛАНК!\n");
